@@ -20,7 +20,7 @@ export function Intro(){
                         </Benefits>
                         <Benefits>
                         <Time><Timer size={16} weight='fill'/></Time>
-                            Endtrega rápida e rastreada
+                            Entrega rápida e rastreada
                         </Benefits>
                     </BenefitsContainer2>
                     

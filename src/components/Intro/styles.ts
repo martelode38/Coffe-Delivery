@@ -4,7 +4,7 @@ export const IntroContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5.75rem 10rem;
+    margin: 5.75rem 0  5.75rem;
 `;
 
 export const TitleContainer = styled.div`
