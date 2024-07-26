@@ -4,33 +4,37 @@ import expresso from '../../../assets/expresso.png'
 
 export function CoffeComponent(){
     return(
-        <CoffeComponentContainer>
-         
-            <ImageCoffe src={expresso} alt="café" />
-          
-            <TypeCoffe>TRADICIONAL</TypeCoffe>
 
-            <NameCoffe>Expresso Tradicional</NameCoffe>
-            <DescriptionCoffe>O tradicional café feito com água quente e grãos moídos</DescriptionCoffe>
+        <div>
+                <ImageCoffe src={expresso} alt="café" />
+            <CoffeComponentContainer>
+            
+                
+            
+                <TypeCoffe>TRADICIONAL</TypeCoffe>
 
-            <BuyBar>
-                <PriceContainer>
-                    <Sign>R$</Sign>
-                    <Price>9,90</Price>
-                </PriceContainer>
-                <span>
-                    <QuatifyCoffes>
-                        <Minus size={14} color="purple"/>
-                        <div>1</div>
-                        <Plus size={14} color="purple"/>
-                    </QuatifyCoffes>
+                <NameCoffe>Expresso Tradicional</NameCoffe>
+                <DescriptionCoffe>O tradicional café feito com água quente e grãos moídos</DescriptionCoffe>
 
-                    <CartButton>
-                        <ShoppingCartSimple size={25} weight="fill" color="white"/>
-                    </CartButton>
-                </span>
-               
-            </BuyBar>
-        </CoffeComponentContainer>
+                <BuyBar>
+                    <PriceContainer>
+                        <Sign>R$</Sign>
+                        <Price>9,90</Price>
+                    </PriceContainer>
+                    <span>
+                        <QuatifyCoffes>
+                            <Minus size={14} color="purple"/>
+                            <div>1</div>
+                            <Plus size={14} color="purple"/>
+                        </QuatifyCoffes>
+
+                        <CartButton>
+                            <ShoppingCartSimple size={25} weight="fill" color="white"/>
+                        </CartButton>
+                    </span>
+                
+                </BuyBar>
+            </CoffeComponentContainer>
+        </div>
     );
 }

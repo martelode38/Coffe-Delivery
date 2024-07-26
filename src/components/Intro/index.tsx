@@ -1,9 +1,13 @@
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react';
-import imagem from '../../assets/Imagem.png'
-import { Benefits, BenefitsContainer1, BenefitsContainer2, Cart, Coffe, IntroContainer, IntroContainer2, Pack, SubTitle, Time, Title, TitleContainer } from './styles';
+import imagem from '../../assets/Imagem.png';
+import Hero from '../../assets/hero-bg.svg';
+import { Benefits, BenefitsContainer1, BenefitsContainer2, Cart, Coffe, HeroImg, IntroContainer, IntroContainer2, Pack, SubTitle, Time, Title, TitleContainer } from './styles';
 export function Intro(){
     return(
+        <div>
+        <HeroImg src={Hero} alt="" />
         <IntroContainer>
+            
             <IntroContainer2>
                 <TitleContainer>
                     <Title>Encontre o café perfeito para qualquer hora do dia</Title>
@@ -41,5 +45,6 @@ export function Intro(){
            
             <img src={imagem} alt="imagem logo intro" />
         </IntroContainer>
+        </div>
     );
 }
