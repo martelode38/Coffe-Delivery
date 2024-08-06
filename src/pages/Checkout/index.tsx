@@ -1,11 +1,12 @@
 import { Bank, CreditCard, CurrencyDollar, MapPinSimple, Minus, Money, Plus, Trash } from "@phosphor-icons/react";
+import { Address } from "./styles";
 
 export function Checkout(){
     return(
         <div>
             
             
-            <div>
+            <Address>
                 <strong>Complete  seu pedido</strong>
                 <div>
                     <div>
@@ -23,7 +24,7 @@ export function Checkout(){
                         <input type="text" placeholder="Cidade" />
                         <input type="text" placeholder="UF" />
                     </form>
-                </div>h
+                </div>
                 <div>
                     <div>
                         <CurrencyDollar/>
@@ -49,7 +50,7 @@ export function Checkout(){
                         </button>
                     </form>
                 </div>
-            </div>
+            </Address>
 
             <div>
                 <strong>Cafés selecionados</strong>

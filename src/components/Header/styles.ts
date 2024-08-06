@@ -12,13 +12,14 @@ export const HeaderContainer = styled.header`
         display: flex;
         align-items: center;
         gap: 1rem;
-        
+        cursor: pointer;
 
         span{
             color: ${props => props.theme['yellow-dark']};
             background-color: ${props => props.theme['yellow-light']};
             padding: 0.5rem;
             border-radius: 8px;
+
         }
     }
     nav{
@@ -28,6 +29,7 @@ export const HeaderContainer = styled.header`
         padding: 0.5rem;
         border-radius: 8px;
         gap: 0.3rem;
+        cursor: pointer;
         div{
             color: ${props => props.theme['purple-dark']};
         }
