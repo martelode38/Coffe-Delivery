@@ -7,8 +7,14 @@ export const IntroContainer = styled.div`
     margin: 5.75rem 0  5.75rem;
 `;
 
-export const Hero = styled.img`
-
+export const HeroImg = styled.img`
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 544px;
+    width: 100vw;
+    object-fit: cover;
+    margin: 5.75rem 0;
 `;
 
 export const TitleContainer = styled.div`
