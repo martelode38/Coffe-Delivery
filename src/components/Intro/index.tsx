@@ -5,46 +5,46 @@ import { Benefits, BenefitsContainer1, BenefitsContainer2, Cart, Coffe, HeroImg,
 export function Intro(){
     return(
         <div>
-        <HeroImg src={Hero} alt="" />
-        <IntroContainer>
-            
-            <IntroContainer2>
-                <TitleContainer>
-                    <Title>Encontre o café perfeito para qualquer hora do dia</Title>
+            <HeroImg src={Hero} alt="" />
+            <IntroContainer>
+                
+                <IntroContainer2>
+                    <TitleContainer>
+                        <Title>Encontre o café perfeito para qualquer hora do dia</Title>
 
-                    <SubTitle> Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</SubTitle>
-                </TitleContainer>
-               
+                        <SubTitle> Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</SubTitle>
+                    </TitleContainer>
                 
-                <BenefitsContainer1>
-                    <BenefitsContainer2>
-                        <Benefits>
-                            <Cart><ShoppingCart size={16} weight='fill'/></Cart>
-                            Compra simples e segura
-                        </Benefits>
-                        <Benefits>
-                        <Time><Timer size={16} weight='fill'/></Time>
-                            Entrega rápida e rastreada
-                        </Benefits>
-                    </BenefitsContainer2>
                     
-                    <BenefitsContainer2>
-                        <Benefits>
-                        <Pack><Package size={16} weight='fill'/></Pack>
-                            Embalagem mantém o café intacto
-                        </Benefits>
-                        <Benefits>
-                        <Coffe><Coffee size={16} weight='fill'/></Coffe>
-                            O café chega fresquinho até você
-                        </Benefits>
-                    </BenefitsContainer2>
+                    <BenefitsContainer1>
+                        <BenefitsContainer2>
+                            <Benefits>
+                                <Cart><ShoppingCart size={16} weight='fill'/></Cart>
+                                Compra simples e segura
+                            </Benefits>
+                            <Benefits>
+                            <Time><Timer size={16} weight='fill'/></Time>
+                                Entrega rápida e rastreada
+                            </Benefits>
+                        </BenefitsContainer2>
+                        
+                        <BenefitsContainer2>
+                            <Benefits>
+                            <Pack><Package size={16} weight='fill'/></Pack>
+                                Embalagem mantém o café intacto
+                            </Benefits>
+                            <Benefits>
+                            <Coffe><Coffee size={16} weight='fill'/></Coffe>
+                                O café chega fresquinho até você
+                            </Benefits>
+                        </BenefitsContainer2>
+                        
+                    </BenefitsContainer1>
                     
-                </BenefitsContainer1>
-                
-            </IntroContainer2>
-           
-            <img src={imagem} alt="imagem logo intro" />
-        </IntroContainer>
+                </IntroContainer2>
+            
+                <img src={imagem} alt="imagem logo intro" />
+            </IntroContainer>
         </div>
     );
 }

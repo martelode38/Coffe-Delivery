@@ -6,10 +6,10 @@ export function CoffeComponent(){
     return(
 
         <div>
-                <ImageCoffe src={expresso} alt="café" />
+            
             <CoffeComponentContainer>
             
-                
+                w<ImageCoffe src={expresso} alt="café" />
             
                 <TypeCoffe>TRADICIONAL</TypeCoffe>
 
