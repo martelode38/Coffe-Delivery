@@ -9,7 +9,7 @@ export function CoffeComponent(){
             
             <CoffeComponentContainer>
             
-                w<ImageCoffe src={expresso} alt="café" />
+                <ImageCoffe src={expresso} alt="café" />
             
                 <TypeCoffe>TRADICIONAL</TypeCoffe>
 

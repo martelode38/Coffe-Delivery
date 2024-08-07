@@ -1,56 +1,67 @@
-import { Bank, CreditCard, CurrencyDollar, MapPinSimple, Minus, Money, Plus, Trash } from "@phosphor-icons/react";
-import { Address } from "./styles";
+import { Bank, CreditCard, CurrencyDollar, MapPin, Minus, Money, Plus, Trash } from "@phosphor-icons/react";
+import { Address, Container1, TitleAddress, HeaderAddress, CheckoutContainer, FormAddress, NeighborhoodInput, CityInput, StateInput, CepInput, NumberInput, StreetInput, FullAddressInput, TypePayContainer, TypePayTitle, Buttons, FormPay } from "./styles";
 
 export function Checkout(){
     return(
-        <div>
+        <CheckoutContainer>
             
-            
-            <Address>
-                <strong>Complete  seu pedido</strong>
-                <div>
+            <Container1>
+                <TitleAddress>Complete  seu pedido</TitleAddress>
+                
+                <Address>
+                    
                     <div>
-                        <MapPinSimple size = {32} />
-                        <span>Endereço de Entrega</span>
-                        <p>Informe o endereço onde deseja receber seu pedido</p>
+                        <HeaderAddress>
+                            <MapPin size = {22} color="#C47F17" />
+                            <div>
+                                <span>Endereço de Entrega</span>
+                                <p>Informe o endereço onde deseja receber seu pedido</p>
+                            </div>
+                            
+                        </HeaderAddress>
+
+                        <FormAddress action="">
+                            <CepInput type="text" placeholder="CEP" />
+                            <StreetInput type="text" placeholder="Rua" />
+                            <NumberInput type="text" placeholder="Número" />
+                            <FullAddressInput type="text" placeholder="Complemento" />
+                            <NeighborhoodInput type="text" placeholder="Bairro" />
+                            <CityInput type="text" placeholder="Cidade" />
+                            <StateInput type="text" placeholder="UF" />
+                        </FormAddress>
                     </div>
 
-                    <form action="">
-                        <input type="text" placeholder="CEP" />
-                        <input type="text" placeholder="Rua" />
-                        <input type="text" placeholder="Número" />
-                        <input type="text" placeholder="Complemento" />
-                        <input type="text" placeholder="Bairro" />
-                        <input type="text" placeholder="Cidade" />
-                        <input type="text" placeholder="UF" />
-                    </form>
-                </div>
-                <div>
-                    <div>
-                        <CurrencyDollar/>
-                        <span>Pagamento</span>
-                        <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
+                </Address>
+
+                <TypePayContainer>
+                        <TypePayTitle>
+                            
+                            <CurrencyDollar size={22} color="#4B2995"/>
+                            <div>
+                                <span>Pagamento</span>
+                                <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
+                            </div>
+                        </TypePayTitle>
+
+                        <FormPay action="">
+                            <Buttons>
+                                <CreditCard size={16} color="#4B2995"/>
+                                <p>CARTÃO DE CRÉDITO</p>
+                            </Buttons>
+                            
+                            <Buttons>
+                                <Bank size={16} color="#4B2995"/>
+                                <p>CARTÃO DE DÉBITO</p>
+                            </Buttons>
+
+                            <Buttons>
+                                <Money size={16} color="#4B2995"/>
+                                <p>DINHEIRO</p>
+                            </Buttons>
+                        </FormPay>
+                    </TypePayContainer>
+            </Container1>
             
-                    </div>
-
-                    <form action="">
-                        <button>
-                            <CreditCard size={32}/>
-                            <p>CARTÃO DE CRÉDITO</p>
-                        </button>
-                        
-                        <button>
-                            <Bank size={32}/>
-                            <p>CARTÃO DE DÉBITO</p>
-                        </button>
-
-                        <button>
-                            <Money size={32}/>
-                            <p>DINHEIRO</p>
-                        </button>
-                    </form>
-                </div>
-            </Address>
 
             <div>
                 <strong>Cafés selecionados</strong>
@@ -112,6 +123,6 @@ export function Checkout(){
                     <div>R$ 32,70</div>
                 </div>
             </div>
-        </div>
+        </CheckoutContainer>
     );
 }
