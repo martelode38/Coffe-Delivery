@@ -8,6 +8,7 @@ export const CheckoutContainer = styled.div`
     margin: 5rem 10rem;
     display: flex;
     gap: 2rem;
+    justify-content: space-between;
 `;
 
 export const TitleAddress =  styled.strong`
@@ -19,7 +20,7 @@ export const TitleAddress =  styled.strong`
 `;
 
 export const Address = styled.div`
-    background: ${props => props.theme['gray-100']};
+    background: ${props => props.theme['gray-200']};
     border-radius: 6px;
     width: 40rem;
     height: 23.25rem;
@@ -66,7 +67,7 @@ export const FormAddress = styled.form`
 `;
 
 export const Inputs = styled.input`
-    background: ${props => props.theme['gray-200']};
+    background: ${props => props.theme['gray-300']};
     border: 1px solid ${props => props.theme['gray-400']};
     color: ${props => props.theme['gray-800']};
     font-family: "Roboto";
@@ -112,7 +113,7 @@ export const StateInput = styled(Inputs)`
 `;
 
 export const TypePayContainer = styled.div`
-    background: ${props => props.theme['gray-100']};
+    background: ${props => props.theme['gray-200']};
     border-radius: 6px;
     width: 40rem;
     height: 12.938rem;
@@ -176,4 +177,60 @@ export const Buttons = styled.button`
     }
     
 `;
+
+export const ContainerCart = styled.div`
+    background: ${props => props.theme['gray-200']};
+    border-radius: 6px 44px 6px 44px;
+    
+    width: 28rem;
+    padding: 2.5rem;
+    display: grid;
+    gap: 0.5rem;
+`;
+
+export const TotalItens = styled.div`
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-size: 16px;
+`;
+
+export const Total = styled.div`
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 600;
+`;
+
+export const DescricaoItens = styled.div`
+    display: grid;
+    gap: 0.844rem;
+`;
+
+export const ButtonConfirmarPedido = styled.button`
+    width: 23rem;
+    height: 2.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ${props => props.theme['yellow']};
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 500;
+    color: ${props => props.theme.white};
+    border: 0;
+    border-radius: 6px;
+`;
+
+export const SelecionadosContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+`;
+
 

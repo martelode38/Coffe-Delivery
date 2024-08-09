@@ -1,5 +1,8 @@
-import { Bank, CreditCard, CurrencyDollar, MapPin, Minus, Money, Plus, Trash } from "@phosphor-icons/react";
-import { Address, Container1, TitleAddress, HeaderAddress, CheckoutContainer, FormAddress, NeighborhoodInput, CityInput, StateInput, CepInput, NumberInput, StreetInput, FullAddressInput, TypePayContainer, TypePayTitle, Buttons, FormPay } from "./styles";
+import { Bank, CreditCard, CurrencyDollar, MapPin, Money } from "@phosphor-icons/react";
+import { Address,ContainerCart, SelecionadosContainer, ButtonConfirmarPedido,DescricaoItens ,TotalItens, Total, Container1, TitleAddress, HeaderAddress, CheckoutContainer, FormAddress, NeighborhoodInput, CityInput, StateInput, CepInput, NumberInput, StreetInput, FullAddressInput, TypePayContainer, TypePayTitle, Buttons, FormPay } from "./styles";
+import { CardComponent } from "./CardComponent";
+
+
 
 export function Checkout(){
     return(
@@ -62,67 +65,42 @@ export function Checkout(){
                     </TypePayContainer>
             </Container1>
             
+            <SelecionadosContainer>
+                <TitleAddress>Cafés selecionados</TitleAddress>
+                <ContainerCart>
 
-            <div>
-                <strong>Cafés selecionados</strong>
-
-                <div>
-                    <img src="" alt="" />
-                    <span>Expresso Tradicional</span>
                     <div>
-                        <div>
-                            <Minus/>
-                            <div>1</div>
-                            <Plus/>
-                        </div>
-                        <div>
-                            <Trash/>
-                            <div>REMOVER</div>
-                        </div>
+                       <CardComponent/>
+                       
                     </div>
-                </div>
+                
+                    <DescricaoItens>
+                        <TotalItens>
+                            <p>Total de itens</p>
+                            <div>R$ 29,70</div>
+                        </TotalItens>
 
-                <span>R$ 9,90</span>
-            </div>
+                        <TotalItens>
+                            <p>Entrega</p>
+                            <div>R$ 3,00</div>
+                        </TotalItens>
 
-            <div>
-                <strong>Cafés selecionados</strong>
+                        <Total>
+                            <p>Total</p>
+                            <div>R$ 32,70</div>
+                        </Total>
+                    </DescricaoItens>
 
-                <div>
-                    <img src="" alt="" />
-                    <span>Expresso Tradicional</span>
-                    <div>
-                        <div>
-                            <Minus/>
-                            <div>1</div>
-                            <Plus/>
-                        </div>
-                        <div>
-                            <Trash/>
-                            <div>REMOVER</div>
-                        </div>
-                    </div>
-                </div>
+                    <form action="">
+                        <ButtonConfirmarPedido>CONFIRMAR PEDIDO</ButtonConfirmarPedido>
+                    </form>
+                </ContainerCart>
 
-                <span>R$ 9,90</span>
-            </div>
+                
+            </SelecionadosContainer>
 
-            <div>
-                <div>
-                    <p>total de itens</p>
-                    <div>R$ 29,70</div>
-                </div>
-
-                <div>
-                    <p>tEntrega</p>
-                    <div>R$ 3,00</div>
-                </div>
-
-                <div>
-                    <p>Total</p>
-                    <div>R$ 32,70</div>
-                </div>
-            </div>
+            
+            
         </CheckoutContainer>
     );
 }
