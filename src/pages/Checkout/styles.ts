@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container1 = styled.div`
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 0.75rem;
 `;
 export const CheckoutContainer = styled.div`
@@ -226,11 +227,5 @@ export const ButtonConfirmarPedido = styled.button`
     border-radius: 6px;
 `;
 
-export const SelecionadosContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-
-`;
 
 

@@ -1,5 +1,5 @@
 import { Bank, CreditCard, CurrencyDollar, MapPin, Money } from "@phosphor-icons/react";
-import { Address,ContainerCart, SelecionadosContainer, ButtonConfirmarPedido,DescricaoItens ,TotalItens, Total, Container1, TitleAddress, HeaderAddress, CheckoutContainer, FormAddress, NeighborhoodInput, CityInput, StateInput, CepInput, NumberInput, StreetInput, FullAddressInput, TypePayContainer, TypePayTitle, Buttons, FormPay } from "./styles";
+import { Address,ContainerCart, ButtonConfirmarPedido,DescricaoItens ,TotalItens, Total, Container1, TitleAddress, HeaderAddress, CheckoutContainer, FormAddress, NeighborhoodInput, CityInput, StateInput, CepInput, NumberInput, StreetInput, FullAddressInput, TypePayContainer, TypePayTitle, Buttons, FormPay } from "./styles";
 import { CardComponent } from "./CardComponent";
 
 
@@ -65,12 +65,14 @@ export function Checkout(){
                     </TypePayContainer>
             </Container1>
             
-            <SelecionadosContainer>
+            <Container1>
                 <TitleAddress>Cafés selecionados</TitleAddress>
                 <ContainerCart>
 
                     <div>
                        <CardComponent/>
+                       <CardComponent/>
+                      
                        
                     </div>
                 
@@ -97,7 +99,7 @@ export function Checkout(){
                 </ContainerCart>
 
                 
-            </SelecionadosContainer>
+            </Container1>
 
             
             
